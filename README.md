@@ -29,15 +29,15 @@ Users should be able to:
 - Mobile
 <div style="display: flex; width: 880px; margin-bottom: 10px">
   <img src="./design/mobile.png">
-  <img style="margin-left: 10px; width: 100%" src="./design/active-state.png">
+  <img style="margin-left: 10px; width: 50%" src="./design/active-state.png">
 </div>
 Desktop
 <img style="margin-left: 10px;" src="./design/desktop.png">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Github](https://github.com/LevyMatias/NFT_preview_card_component)
+- [Live Site](https://levymatias.github.io/NFT_preview_card_component/)
 
 ## My process
 
