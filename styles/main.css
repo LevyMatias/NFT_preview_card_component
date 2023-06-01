@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+
+.attribution a {
+    color: hsl(228, 42%, 56%);
+}
+
+.margin--top {
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 0px) {
+    main {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .card {
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 13px;
+        padding: 1.4rem;
+        width: 75%;
+        position: relative;
+    }
+
+    .card__image {
+        max-width: 100%;
+        border-radius: 9px;
+    }
+
+    .card__heading {
+        font-size: clamp(1.5rem, 1.5vw, 2rem);
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+    }
+
+    .card__heading:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+
+    .card__paragraph {
+        font-size: clamp(1rem, 1vw, 1.5rem);
+        color: hsl(215, 51%, 70%);
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .card__creator--active {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card__creator--active:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+
+    .card__value {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card__icon--ethereum {
+        background: url(../images/icon-ethereum.svg);
+        background-repeat: no-repeat;
+        padding-left: 1.2rem;
+        height: 1.5rem;
+        font-weight: 500;
+        color: hsl(178, 100%, 50%);
+    }
+
+    .card__icon--clock {
+        background: url(../images/icon-clock.svg);
+        background-repeat: no-repeat;
+        padding-left: 1.2rem;
+        height: 1.5rem;
+        font-weight: 500;
+        color: hsl(215, 51%, 70%);
+    }
+
+    .card__creator {
+        display: flex;
+        align-items: center;
+    }
+
+    .card__profile {
+        background-color: hsl(215, 51%, 70%);
+        border-radius: 50%;
+        padding: .33%;
+        width: 8%;
+        margin-right: 1rem;
+    }
+
+    .card__profile--image {
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .card__creator__paragraph {
+        color: hsl(215, 51%, 70%);
+    }
+
+    .card__line {
+        color: hsl(215, 25.4%, 27.8%);
+        height: 1%;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .card {
+        width: 300px;
+    }
+
+    .card__image--active {
+        width: 300px;
+        border-radius: 9px;
+        position: absolute;
+        top: calc(+1.4rem);
+        background: url(../images/icon-view.svg);
+        background-color: hsla(178, 100%, 50%, 0.6);
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .card:hover .card__image--active {
+        height: 300px;
+    }
+}
